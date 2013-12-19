@@ -3,6 +3,7 @@ before_script:
 - sleep 3
 - java -jar test/tools/BrowserStackTunnel.jar DEV_KEY localhost,9000,0
 - sleep 3
+- node test/webdriver.js
 node_js:
 - "0.10"
 env:

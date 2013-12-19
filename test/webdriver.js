@@ -12,9 +12,7 @@ var driver = new webdriver.Builder().
   withCapabilities(capabilities).
   build();
 
-driver.get('http://people.mozilla.org/~aschaar/shiftbox/demo/');
-driver.findElement(webdriver.By.name('q')).sendKeys('BrowserStack');
-driver.findElement(webdriver.By.name('btnG')).click();
+driver.get('http://localhost:9000/');
 
 driver.getTitle().then(function(title) {
   console.log(title);
